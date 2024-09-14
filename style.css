@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка с меню */
+.header {
+    background-color: orange;
+    padding: 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative; 
+}
+
+.header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+/* Основное содержимое */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.content {
+    width: 75%;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.content h2, .content p {
+    margin-bottom: 15px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    background-color: lightgrey;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    background-color: white;
+    padding: 8px; 
+    border: 1px solid black; 
+    font-size: 14px;
+    text-align: center; 
+}
+
+/* Боковая панель */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+}
+.sidebar h3 {
+    margin-top: 0;
+}
+.sidebar p {
+    margin-bottom: 10px;
+}
+
+/* Футер */
+.footer {
+    background-color: orange;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    margin-top: 20px;
+}
